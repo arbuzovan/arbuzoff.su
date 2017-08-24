@@ -1,0 +1,13 @@
+php_flag display_errors off
+
+AddDefaultCharset utf-8
+
+RewriteEngine On
+
+Options +FollowSymlinks
+Options All -Indexes
+
+RewriteBase /
+
+RewriteCond %{HTTP_HOST} ^arbuzoff.su$ [NC]
+RewriteRule ^(.*)$ http://www.arbuzoff.su/$1 [R=301,L]
